@@ -17,16 +17,17 @@ parser.add_argument('--limit', metavar='l', type=int, nargs='+',
 parser.add_argument('--images', metavar='i', type=bool, help='Should the images get downloaded and uploaded to S3 ?')
 args = parser.parse_args()
 print(args)
+
 # Connecting MONGODB
-client = pymongo.MongoClient("mongodb+srv://tolga:IegVRYrd7WD9KNlA@mongodb-omsvv.mongodb.net/test?retryWrites=true&w=majority")
+client = pymongo.MongoClient("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 db = client.facebook_marketplace
 col = db.items
 
 # AWS CREDENTIALS
-ACCESS_KEY = 'AKIAI7GM4HZHQ6EZPK2Q'
-SECRET_KEY = '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'
-S3_BUCKET_URL = 'https://bucket7474.s3.us-east-2.amazonaws.com/' # Ex: https://bucket7474.s3.us-east-2.amazonaws.com/
-S3_BUCKET_NAME = 'bucket7474' # Ex: bucket7474
+ACCESS_KEY = 'XXXXXXXXXXXXXXXXX'
+SECRET_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+S3_BUCKET_URL = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX' # Ex: https://bucket7474.s3.us-east-2.amazonaws.com/
+S3_BUCKET_NAME = 'XXXXXXXXXXXXXXXXX' # Ex: bucket7474
 MARKETPLACE_URL = 'https://www.facebook.com/marketplace/sydney/search/?query=dealership' # For Location Parameter
 
 # Uploads images to aws
