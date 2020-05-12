@@ -1,0 +1,7 @@
+/node_modules
+/.ipynb_checkpoints
+cookies.json
+geckodriver.log
+main.js
+Untitled.ipynb
+.DS_Store
